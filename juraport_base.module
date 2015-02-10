@@ -1,0 +1,72 @@
+<?php
+/**
+ * @file
+ * Code for the Juraport base feature.
+ */
+
+include_once 'juraport_base.features.inc';
+
+
+/**
+ * Define site roles in code.
+ *
+ * Create a secure_permissions_data module directory and place this function
+ * in secure_permissions_data.module.
+ *
+ * @return
+ *   An array defining all the roles for the site.
+ */
+function juraport_base_secure_permissions_roles() {
+  return array(
+    'anonymous user',
+    'authenticated user',
+    'juraport editor',
+  );
+}
+
+/**
+ * Define site permissions in code.
+ *
+ * Create a secure_permissions_data module directory and place this function
+ * in secure_permissions_data.module.
+ *
+ * @param $role
+ *   The role for which the permissions are being requested.
+ *
+ * @return
+ *   An array defining all the permissions for the site.
+ */
+function juraport_base_secure_permissions($role) {
+  $permissions = array(
+    'anonymous user' => array(
+      'access content',
+      'search content',
+      'view terms in 2',
+    ),
+    'authenticated user' => array(
+      'access content',
+      'search content',
+      'view terms in 2',
+    ),
+    'juraport editor' => array(
+      'access administration menu',
+      'access administration pages',
+      'access content',
+      'access content overview',
+      'access contextual links',
+      'access overlay',
+      'access site in maintenance mode', 
+      'edit any jura_subject content',
+      'edit own juraport_editor profile',
+      'edit own jura_subject content',
+      'search content',
+      'use advanced search',
+      'view own unpublished content',
+      'view revisions',
+      'view the administration theme',
+    ),
+  );
+  if (isset($permissions[$role])) {
+    return $permissions[$role];
+  }
+}
