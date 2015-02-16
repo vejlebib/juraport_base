@@ -3,6 +3,7 @@ description = Defines base settings for the Juraport site
 core = 7.x
 package = Juraport
 project = juraport_base
+version = 7.x-0.1.0
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = filter
