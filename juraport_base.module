@@ -10,9 +10,6 @@ include_once 'juraport_base.features.inc';
 /**
  * Define site roles in code.
  *
- * Create a secure_permissions_data module directory and place this function
- * in secure_permissions_data.module.
- *
  * @return
  *   An array defining all the roles for the site.
  */
@@ -26,9 +23,6 @@ function juraport_base_secure_permissions_roles() {
 
 /**
  * Define site permissions in code.
- *
- * Create a secure_permissions_data module directory and place this function
- * in secure_permissions_data.module.
  *
  * @param $role
  *   The role for which the permissions are being requested.
