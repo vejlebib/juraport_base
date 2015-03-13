@@ -17,14 +17,65 @@ function juraport_base_metatag_export_default() {
       'title' => array(
         'value' => '[current-page:title] | [site:name]',
       ),
+      'description' => array(
+        'value' => '',
+      ),
+      'abstract' => array(
+        'value' => '',
+      ),
+      'keywords' => array(
+        'value' => '',
+      ),
+      'robots' => array(
+        'value' => array(
+          'index' => 'index',
+          'follow' => 'follow',
+          'noindex' => 0,
+          'nofollow' => 0,
+          'noarchive' => 0,
+          'nosnippet' => 0,
+          'noodp' => 0,
+          'noydir' => 0,
+          'noimageindex' => 0,
+          'notranslate' => 0,
+        ),
+      ),
+      'news_keywords' => array(
+        'value' => '',
+      ),
+      'standout' => array(
+        'value' => '',
+      ),
       'generator' => array(
         'value' => 'Drupal 7 (http://drupal.org)',
+      ),
+      'rights' => array(
+        'value' => '',
+      ),
+      'image_src' => array(
+        'value' => '',
       ),
       'canonical' => array(
         'value' => '[current-page:url:absolute]',
       ),
       'shortlink' => array(
         'value' => '[current-page:url:unaliased]',
+      ),
+      'publisher' => array(
+        'value' => '',
+      ),
+      'author' => array(
+        'value' => '',
+      ),
+      'original-source' => array(
+        'value' => '',
+      ),
+      'revisit-after' => array(
+        'value' => '',
+        'period' => '',
+      ),
+      'content-language' => array(
+        'value' => '',
       ),
     ),
   );
