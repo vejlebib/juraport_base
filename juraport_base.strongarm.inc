@@ -197,7 +197,7 @@ function juraport_base_strongarm() {
     'toggle_name' => 1,
     'toggle_favicon' => 1,
     'default_logo' => 0,
-    'logo_path' => 'profiles/juraport/themes/juraport_theme/images/paragraf_fritlagt.png',
+    'logo_path' => 'profiles/juraport/themes/juraport_theme/images/juraport.png',
     'logo_upload' => '',
     'default_favicon' => 0,
     'favicon_path' => 'profiles/juraport/themes/juraport_theme/images/juraport.ico',
