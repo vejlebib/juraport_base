@@ -7,21 +7,16 @@
 include_once 'juraport_base.features.inc';
 
 /**
- * Implements hook_init().
+ * Implements hook_date_formats().
  */
-function juraport_base_init() {
-  $query = new EntityFieldQuery();
-  $result = $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'jura_subject')
-    ->execute();
-  $nodes = node_load_multiple(array_keys($result['node']));
-  foreach ($nodes as $node) {
-    $path = path_load('node/' . $node->nid);
-    $path['language'] = LANGUAGE_NONE;
-    path_save($path);
-    break;
-  }  
-  $language = language_default();
+function juraport_base_date_formats() {
+  return array(
+    array(
+      'type' => 'short',
+      'format' => 'j. M Y - H:i',
+      'locales' => array(''),
+    ),
+  );
 }
 
 /**
