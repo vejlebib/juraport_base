@@ -47,12 +47,10 @@ function juraport_base_secure_permissions($role) {
     'anonymous user' => array(
       'access content',
       'search content',
-      'view terms in 1',
     ),
     'authenticated user' => array(
       'access content',
       'search content',
-      'view terms in 1',
     ),
     'juraport editor' => array(
       'access administration menu',
